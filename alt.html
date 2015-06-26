@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Aleksej">
+  <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
+  <title>Alpha Testimonials</title>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+   <style type="text/css">
+      a, a:active{
+        text-decoration: none
+      }
+      nav{padding: 15px 0; background: #ddd}
+      footer{
+        background: #ddd;
+        padding: 45px 0;
+        font-size: 12px;
+        text-align: center;
+        box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+        margin-top: 30px
+      }
+      nav img{float: left; width: 50px; height: auto;margin-left: 15px;}
+      nav ul{float: right;}
+      .clearfix:before,
+      .clearfix:after,
+      ul:before,
+      ul:after{
+        display: table;
+        content: " ";
+      }
+      .clearfix:after,
+      ul:after{
+        clear:both;
+      }
+      ul li{
+        display: inline-block;
+        margin-left: 10px;
+      }
+      nav:not(.choose){
+        width: 100%;
+        box-shadow: inset 0 0 2px rgba(0,0,0,0.3)
+      }
+      nav, nav ul{
+        display: inline-block;
+      }
+      nav:not(.choose) ul{
+        margin-right: 15px;
+      }
+      nav.choose{
+        text-align: center;
+        width: 100%;
+        background: transparent;
+      }
+      nav.choose li{
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+      }
+      nav.choose ul{
+        float: none;
+      }
+   </style>     
+</head> 
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+      <nav class="clearfix">
+        <img src="images/logo.png" width="100" height="100" />
+        <ul>
+            <li><a href="http://themeflection.com/plug/testimonials-jquery-plugin/">Back to article</a></li>
+            <li><a href="http://themeflection.com/plug/responsive-testimonials-showcase/">WordPress version</a></li>
+        </ul>
+      </nav>
+
+      <nav class="choose clearfix">
+        <ul>
+            <li><a href="default.html">Default Layout</a></li>
+            <li><a href="alt.html">Alternative Layout</a></li>
+        </ul>
+      </nav>  
+
+
+      <section id="testimonials">
+
+            <div class="testim-ovl"></div>
+            <div class="testimonials-wrapper">
+
+             <ul class="testimonials-line">
+
+               <li class="customer">
+
+                   <div class="testimonial-bubble">
+                       <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                   </div>
+
+                   <div class="cus-profile">
+                      <span class="cus-image"><img src="images/te1.jpg"></span>
+                     <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>  
+                   </div>
+                 
+               </li>
+
+               <li class="customer">
+
+                   <div class="testimonial-bubble">
+                       <p> Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                   </div>
+
+                   <div class="cus-profile">
+                      <span class="cus-image"><img src="images/te2.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>   
+                   </div>
+                 
+               </li>
+
+               <li class="customer">
+
+                   <div class="testimonial-bubble">
+                       <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                   </div>
+
+                   <div class="cus-profile">
+                      <span class="cus-image"><img src="images/te3.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>  
+                   </div>
+                 
+               </li>
+
+               <li class="customer">
+
+                   <div class="testimonial-bubble">
+                       <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. </p>
+                   </div>
+
+                   <div class="cus-profile">
+                      <span class="cus-image"><img src="images/te1.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>  
+                 
+               </li>
+
+             <span id="prev"></span>
+             <span id="next"></span>   
+
+             </ul><!-- .testimonials-line -->
+
+             </div><!-- .testimonials-wrapper -->
+          
+      </section><!-- .testimonials -->  
+
+      <footer>
+          Copyright by <a href="http://themeflection.com">Themeflection.com</a>
+      </footer>
+
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="js/alpha.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('#testimonials').alpha({
+            layout: 'alt',
+            delay : 5300
+        });
+      })
+      </script>
+  </body>
+</html>
